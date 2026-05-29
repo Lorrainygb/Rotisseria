@@ -1,0 +1,15 @@
+@import url(../global/variable.css);
+
+@media only screen and (max-width: 710px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .suporte-card,
+    .form-section {
+        width: 100%;
+    }
+    .modal {
+        width: 100%;
+    }
+}

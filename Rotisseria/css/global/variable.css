@@ -1,0 +1,21 @@
+:root {
+    /*=============== FONTES ===============*/
+    --Pacifico: "Pacifico", cursive;
+    --Montserrat: "Montserrat", sans-serif;
+
+    /*=============== CORES PADRÃO ===============*/
+    --branco: #fff;
+    --preto: #000;
+    --baunilha: #FCF6E8;
+    --vermelho-vinho: #932125;
+    --mostarda: #E4BB6A;
+    --verde-musgo: #1A2F1C;
+
+    /*=============== HOVER ===============*/
+    --vermelho-tomate-hover: #db1e24;
+    --verde-musgo-hover: rgb(58, 131, 38);
+
+    /*=============== SOMBRAS ===============*/
+    --form-shadow: rgb(0 0 0 / 19%);
+    --modal-shadow: rgba(0, 0, 0, 0.4);
+}

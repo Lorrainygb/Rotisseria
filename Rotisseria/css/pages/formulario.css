@@ -1,0 +1,200 @@
+@import url(../global/variable.css);
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;          
+    overflow: hidden; 
+}
+h1 {
+    font-family: var(--Pacifico);
+    color: var(--vermelho-vinho);
+    font-weight: 400;
+    font-size: 37px;
+    text-align: center;
+    line-height: 100%;
+    margin: 20px;
+}
+h3 {
+    font-family: var(--Pacifico);
+    color: var(--mostarda);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+/*=============== SUPORTE CARD =============== */
+.logo {
+    background-color: var(--vermelho-vinho);
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    color: var(--baunilha);
+    text-align: center;
+}
+.logo img {
+    width: 145px;
+    height: 145px;
+}
+.suporte-info p {
+    font-family: var(--Montserrat);
+    color: var(--baunilha);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: underline;
+    text-decoration-thickness: 0%;
+}
+
+/*=============== FORMULÁRIO =============== */
+.form-container {
+    display: flex;
+    background-color: var(--baunilha);
+    border: 1px solid var(--preto);
+    box-shadow: 0px 5px 15px var(--form-shadow);
+    min-height: 450px;
+}
+.form-section {
+    /* width: 65%;
+    padding: 40px; */
+    width: 71%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.group {
+    position: relative;
+}
+.group label {
+    position: absolute;
+    bottom: 26px;
+    left: 10px;
+}
+.group:focus-within label {
+    color: var(--vermelho-vinho);
+    font-weight: 500;
+}
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--preto);
+    /* padding: 11px; */
+    padding: 12px 12px 12px 70px;
+    width: 100%;
+    margin: 14px 3px;
+    outline: none;
+    font-size: 17px;
+}
+input:focus {
+    border-bottom: 2px solid var(--vermelho-vinho);
+}
+input#codigo {
+    padding: 12px 12px 12px 144px;
+}
+input#nova_senha {
+    padding: 12px 12px 12px 114px;
+}
+input#confirma_nova_senha {
+    padding: 12px 12px 12px 190px;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 3px;
+}
+.actions span, a {
+    color: var(--vermelho-vinho);
+    text-decoration-thickness: 0%;
+}
+.actions button {
+    padding: 10px;
+    width: 33%;
+    background-color: var(--vermelho-vinho);
+    color: var(--baunilha);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.actions a:hover,
+.forgot_pass a:hover {
+    color: var(--vermelho-tomate-hover);
+    font-weight: 400;
+}
+.actions button:hover {
+    background-color: var(--vermelho-tomate-hover);
+}
+.forgot_pass a {
+    font-size: 13px;
+}
+#continuar, #confirmar {
+    background-color: var(--verde-musgo);
+}
+#continuar:hover, #confirmar:hover {
+    background-color: var(--verde-musgo-hover);
+}
+/* .reenviar_codigo {
+    text-align: center;
+}
+.reenviar_codigo a {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--preto);
+    text-decoration: underline;
+    text-decoration-thickness: 0%;
+}
+.reenviar_codigo a:hover {
+    color: var(--cinza-hover);
+} */
+
+/*=============== MODAL SENHA INCORRETA =============== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    width: 115%;
+    height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    background-color: var(--vermelho-vinho);
+    box-shadow: 0px 4px 15px var(--modal-shadow);
+    text-align: center;
+    color: var(--baunilha);
+}
+#fecha-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: var(--baunilha);
+    text-decoration: none;
+    font-size: 18px;
+}
+.modal-content img {
+    width: 88px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.modal-content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.modal-content p {
+    font-size: 13px;
+    opacity: 0.9;
+}
